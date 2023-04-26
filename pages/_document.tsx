@@ -38,8 +38,8 @@ export default class MyDocument extends Document {
     const page = await renderPage();
     const styles = [
       <style
-        key="react-native-style"
-        dangerouslySetInnerHTML={{ __html: style }}
+          key="react-native-style"
+          dangerouslySetInnerHTML={{ __html: style }}
       />,
       getStyleElement(),
     ];
@@ -48,13 +48,13 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <Html style={{ height: "100%" }}>
-        <Head />
-        <body style={{ height: "100%", overflow: "hidden" }}>
+        <Html style={{ height: "100%" }}>
+          <Head />
+          <body style={{ height: "100%", overflow: "hidden" }}>
           <Main />
           <NextScript />
-        </body>
-      </Html>
+          </body>
+        </Html>
     );
   }
 }
